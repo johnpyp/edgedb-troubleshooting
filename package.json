@@ -1,0 +1,19 @@
+{
+  "name": "edgedb-troubleshooting",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "gen:edgedb": "bunx @edgedb/generate edgeql-js && bunx @edgedb/generate queries"
+  },
+  "devDependencies": {
+    "@edgedb/generate": "^0.4.1",
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "edgedb": "^1.4.1",
+    "tsx": "^4.7.0"
+  }
+}
